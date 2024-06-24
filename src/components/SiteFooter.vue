@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <div>{{ $t('companyName') }}</div>
-    <div>{{ $t('address') }}</div>
+    <div>{{ $t('address') }}Мингоцяо</div>
     <div>{{ $t('email') }}g.m.pashirov@outlook.com</div>
     <div>{{ $t('phone') }}u.m.asisov@outlook.com</div>
   </div>
