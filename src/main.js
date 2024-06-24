@@ -6,7 +6,7 @@ import 'swiper/swiper-bundle.css';
 const messages = {
   'ru-ru': {
     companyName: "AzerEnergy JOIN STOCK COMPANY",
-    address: "Address",
+    address: "Адрес:",
     email: "Эл. почта:",
     phone: "Эл. почта:",
     aboutUsTitle:"О нас",
