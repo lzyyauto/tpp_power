@@ -33,6 +33,7 @@
     descriptionKey="efficiencyDescription" 
     orientation="right" />
     <Footer />
+    <EnvTest>!!</EnvTest>
   </div>
 </template>
 
@@ -41,6 +42,7 @@ import Header from '@/components/SiteHeader.vue';
 import Banner from '@/components/SiteBanner.vue';
 import InfoSection from '@/components/InfoSection.vue';
 import Footer from '@/components/SiteFooter.vue';
+import EnvTest from '@/components/EnvTest.vue';
 
 export default {
   mounted() {
@@ -81,7 +83,8 @@ export default {
     Header,
     Banner,
     InfoSection,
-    Footer
+    Footer,
+    EnvTest
   }
 };
 </script>
