@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+  <MaintenanceMode v-if="isMaintenanceMode" />
+  <div v-else>
     <Header @scrollTo="handleScrollTo" />
     <Banner />
   <InfoSection 
@@ -33,6 +35,7 @@
     descriptionKey="efficiencyDescription" 
     orientation="right" />
     <Footer />
+    </div>
   </div>
 </template>
 
@@ -41,6 +44,7 @@ import Header from '@/components/SiteHeader.vue';
 import Banner from '@/components/SiteBanner.vue';
 import InfoSection from '@/components/InfoSection.vue';
 import Footer from '@/components/SiteFooter.vue';
+import MaintenanceMode from '@/components/MaintenanceMode.vue'; // 引入维护模式组件
 
 export default {
   mounted() {
@@ -48,6 +52,7 @@ export default {
   },
   data() {
     return {
+      isMaintenanceMode: true, // 维护模式状态
       scaleImage: require('@/assets/00e3ee5d8e03bf800b5211b01e229a40.jpg'),
       historyImage: require('@/assets/3f2af7e7bbf05f0e5c74cb1289b6c2c7.jpg'),
       repairsImage: require('@/assets/0000004JFGJBNSJ283N011WYJ9.jpg'),
@@ -81,7 +86,8 @@ export default {
     Header,
     Banner,
     InfoSection,
-    Footer
+    Footer,
+    MaintenanceMode // 注册维护模式组件
   }
 };
 </script>
