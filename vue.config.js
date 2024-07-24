@@ -6,7 +6,7 @@ module.exports = defineConfig({
 
   devServer: {
     setupMiddlewares: (middlewares, devServer) => {
-      const MAINTENANCE_MODE = process.env.VUE_APP_MAINTENANCE_MODE === 'true';
+      const MAINTENANCE_MODE = true; //手动维护
 
       if (MAINTENANCE_MODE) {
         devServer.app.get('*', (req, res) => {
