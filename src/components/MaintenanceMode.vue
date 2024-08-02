@@ -13,7 +13,7 @@
   export default {
     data() {
       return {
-        isMaintenanceMode: true //手动维护
+        isMaintenanceMode: false //手动维护
       };
     }
   };

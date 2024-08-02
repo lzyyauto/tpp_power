@@ -52,7 +52,7 @@ export default {
   },
   data() {
     return {
-      isMaintenanceMode: true, // 维护模式状态
+      isMaintenanceMode: false, // 维护模式状态
       scaleImage: require('@/assets/00e3ee5d8e03bf800b5211b01e229a40.jpg'),
       historyImage: require('@/assets/3f2af7e7bbf05f0e5c74cb1289b6c2c7.jpg'),
       repairsImage: require('@/assets/0000004JFGJBNSJ283N011WYJ9.jpg'),
